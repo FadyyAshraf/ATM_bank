@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
+
 void record_transaction(Transaction** head, int transaction_id, int user_id, const char* type, double amount) {
     Transaction* transaction = (Transaction*)malloc(sizeof(Transaction));
     transaction->transaction_id = transaction_id;
