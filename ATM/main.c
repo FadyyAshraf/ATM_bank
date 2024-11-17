@@ -114,12 +114,12 @@ int main()
 
     while (1)
     {
-        int user_id = login(users);
-        if (user_id == -1)
+        int user_id =0;
+        do
         {
-            // If user login failed, exit the loop
-            break;
-        }
+            user_id = login(users);
+        } while (user_id == -1);
+        
 
         // If login was successful, show the menu
         show_menu(users, user_id);
